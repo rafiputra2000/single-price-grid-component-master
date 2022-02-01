@@ -1,0 +1,165 @@
+/*******************************SELECTOR***************************************/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+h2{
+  margin: 5px 0 20px 0;
+}
+
+h3{
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 20px;
+
+}
+
+h4{
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 15px;
+
+}
+
+p{
+  color: hsl(218, 22%, 67%);
+  line-height: 2;
+}
+
+/*******************************CLASS SELECTOR***************************************/
+.main-container{
+  margin: 150px auto 50px auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.card-container{
+  box-sizing: border-box;
+  display: grid;
+  width: 45%;
+  justify-content: center;
+  grid-template-areas:
+  "top top"
+  "middle1 midle2";
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,0.5fr);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px hsl(245, 75%, 52%, 0.25);
+}
+
+.template{
+  padding: 40px;
+}
+
+.middle-description{
+  display: block;
+
+}
+
+.middle-description2{
+  display: block;
+
+}
+
+.card-1{
+  grid-area: top;
+  background-color: hsl(204, 43%, 93%);
+  border-radius: 10px 10px 0 0;
+
+}
+
+
+.card-2{
+  grid-area: middle1;
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0 0 0 10px;
+
+
+}
+
+.card-3{
+  grid-area: midle2;
+  background-color: hsl(179, 62%, 47%);
+  border-radius: 0 0 10px 0;
+
+}
+
+.price{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: flex-start;
+}
+
+.dollar{
+  margin-right: 20px;
+  color: hsl(204, 43%, 93%);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.month{
+  color: hsl(218, 22%, 86%);
+
+}
+
+.description-1{
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 20px;
+}
+
+.template-description-2{
+  width: 80%;
+
+}
+
+.description-2{
+  color: hsl(204, 43%, 93%);
+}
+
+.btn{
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(71, 73%, 54%);
+  padding: 10px 90px 10px 90px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 5px 5px hsl(245, 75%, 52%, 0.25);
+
+  }
+
+/*******************************Media Quaries***************************************/
+
+
+@media only screen and (max-width: 620px){
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .middle-template-card{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .card-2{
+    border-radius: 0;
+  }
+
+  .card-3{
+    grid-area: midle2;
+    background-color: hsl(179, 62%, 47%);
+    border-radius: 0 0 10px 10px;
+
+  }
+
+}
