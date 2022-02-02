@@ -11,6 +11,7 @@ body{
 
 h2{
   margin: 5px 0 20px 0;
+  color: hsl(179, 62%, 43%);
 }
 
 h3{
@@ -27,7 +28,6 @@ h4{
 
 p{
   color: hsl(218, 22%, 67%);
-  line-height: 2;
 }
 
 /*******************************CLASS SELECTOR***************************************/
@@ -70,6 +70,7 @@ p{
   grid-area: top;
   background-color: hsl(204, 43%, 93%);
   border-radius: 10px 10px 0 0;
+  line-height: 2;
 
 }
 
@@ -94,6 +95,7 @@ p{
   justify-content: flex-start;
   align-items: center;
   flex-direction: flex-start;
+  margin-bottom: 10px;
 }
 
 .dollar{
@@ -110,10 +112,11 @@ p{
 
 .description-1{
   color: hsl(204, 43%, 93%);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .template-description-2{
+  line-height: 1.4;
   width: 80%;
 
 }
